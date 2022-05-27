@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap');
+
+/*
+font-family:'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+
+/* * {
+    background-color: red;
+    color: yellow;
+} */
+
+/*Element Selector*/
+
+h1 {
+    color: white;
+}
+
+span {
+    color: aqua;
+}
+
+h2 {
+    color: white;
+    background-color: darkmagenta;
+}
+
+p {
+    color: white;
+} 
+
+/*Class Selector*/
+
+.titlelogo {
+    background-color: darkmagenta;
+    height: 50px;
+    width: 100%;
+}
+
+
+.container1 {
+    background-color: darkorchid;
+    height: 200px;
+    width: 100%;
+}
+
+.container2 {
+    background-color: lime;
+    height: 200px;
+    width: 100%;
+}
+
+.container-2 {
+    background-color: red;
+    
+}
+
+/* id selector */
+#con3 {
+    background-color: lightseagreen;
+}
+
+/* and selector using (,) */
+h1,
+h2 {
+    color: gainsboro;
+}
+
+/* desendant selector using (space) */
+#con3 h2 span {
+    color: orange;
+}
+
+/* CSS Colors */
+/* rgb(red,green,blue) */
+.container4 {
+    background-color: rgba(192, 157, 149);
+}
+
+/* rgb(red,green,blue,alpha channel) */
+.container5 {
+    background-color: rgba(192, 157, 149, .5);
+}
+
+/* opacity */
+.container6 {
+    background-color: rgb(192, 157, 149);
+    opacity: .5;
+}
+
+/* hexcode */
+.container7 {
+    background-color: #446A46;
+}
+
+/* font-family */
+.container8 {
+    font-family: sans-serif;
+}
+
+/* Import font-family */
+.container9 h2 {
+    font-family:'Oswald', sans-serif;
+}
+
+.container9 p {
+    font-family: 'Raleway', sans-serif;
+    background-color: darkorchid;
+}
+
+/* font-size */
+.container10 p {
+    font-size: 2em;
+    background-color: darkorchid;
+}
+
+
+.container11 {
+    background-color: darkorchid;
+}
+
+.container11 h2 {
+    font-weight: 900;
+}
+
+.container11 p {
+    font-weight: bold;
+}
+
+/* font-style
+1:normal 2:italic 3:oblique */
+
+.container11 p {
+    font-style: italic;
+}
+
+/* text-transform
+1:uppercase 2:Lowercase 3:Capitalize*/
+
+.container11 h2 {
+    text-transform: Capitalize;
+}
+
+/* text-decoration
+1:overline 2:underline 
+3:line-through 4:none*/
+
+.container11 p {
+    text-decoration: none;
+    color: white;
+}
+
+/* text-align
+1:left (default) 2:center
+3:right */
+
+.container11 h2 {
+    text-align: center;
+}
+
+/* text-shadow (1st, 2st, 3st, 4st)
+1st: horizotal (-go to left) (+go to right)
+2st: vertical (-go up) (+go down)
+3st: blurry
+4st: color
+*/
+
+.container11 h2 {
+    text-shadow: 3px -3px 6px #446A46,
+    -3px 3px 4px #f8d400,
+    -5px 4px 4px tomato;
+}
+
+/* text-indent */
+
+.container8 {
+    background-color: darkorchid;
+}
+
+.container9 {
+    text-indent: 50px;
+}
+
+/* letter-spacing */
+
+.container8 p {
+    letter-spacing: 5px;
+}
+
+/* word-spacing */
+
+.container9 {
+    word-spacing: 10px;
+}
+
+
+.container12 ul li {
+    list-style: lower-alpha;
+    background-color: darkorchid;
+    list-style-position: outside;
+}
+
+.container12 ul {
+    background-color: darkmagenta;
+    color: white;
+}

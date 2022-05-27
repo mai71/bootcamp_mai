@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap');
+
+/* 
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif; 
+*/
+
+
+
+/* Presets / Cutom setting */
+
+* {
+    margin: o;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* .outline {
+    height: 100px;
+    width: 100px;
+    border: 5px solid red;
+    outline: 5px solid yellow;
+} */
+
+.nav {
+    border: 5px solid red;
+    width: 85%;
+    overflow: auto;
+    margin: 1em auto;
+}
+
+.nav h1 a {
+    /* border: 3px solid green; */
+    float: left;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: grey;
+
+}
+
+.nav ul {
+    
+    float: right;
+    margin: 1em auto;
+}
+
+.nav ul li {
+    /* border: 3px dashed green ; */
+    display: inline;
+}
+
+.nav ul li a { 
+    /* border: 3px dashed blue */
+    margin-left: 1em;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+}
+
+/* section */
+
+.section {
+    border: 5px solid darkblue;
+    overflow: auto;
+}
+
+.section-text {
+    border: 3px dashed darkgreen;
+    height: 500px;
+    width: 48%;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.section-text:nth-child(2) {
+    margin-right: 0;
+}
+
+.section-text h2 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* display
+
+    inline = accept only margin left and right
+
+    block = cover whole width
+          = accept margin all sides
+
+    inline-block = accept margin all sides
+                 = will not cover whole width
+
+*/
+
+.section-text a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 1em;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#toyota {
+    background-image: url(../images/toyotacar.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#suzuki {
+    background-image: url(../images/suzukicar.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* CSS Positon */
+
+/* static = fixed 
+　　staticは初期値　*/
+
+
+.static {
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 100px;
+    margin-top: 2em;
+    left: 100%; /* not supported */
+}
+
+/* relative 　positiondで指定
+　要素の位置を変えたくない時　*/
+.relative1 {
+    background-color: yellow;
+    height: 300px;
+    width: 45%;
+    position: relative;
+    left: 4%;
+}
+
+.relative2 {
+    background-color: darkmagenta;
+    height: 300px;
+    width: 45%;
+    position: relative;
+    bottom: 300px;
+    left: 51%;
+    z-index: 1;
+}
+
+/* absolute no parent
+
+        will roam/move around the screen
+
+　　positionで指定
+*/
+
+.absolute1 {
+    background-color: aqua;
+    height: 200px;
+    width: 20%;
+    position: absolute;
+    left: 40px;
+    bottom: -225px;
+    z-index: 3;
+}
+
+.parent-absolute2 {
+    background-color: darkgreen;
+    height: 300px;
+    width: 45%;
+    position: relative;
+}
+
+.child-absolute {
+    background-color: orangered;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* positionで指定 */
+
+.fixed {
+    background-color: chocolate;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    z-index: 2;
+}
+
+/* z-index  重なり順（１，２，３～）で
+　　数字が大きい順で、上に表示される　*/
+
+/* .relative2 {
+    z-index: 1;
+}

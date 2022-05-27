@@ -1,0 +1,27 @@
+/* Box Model */
+​
+.box1 {
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    border: 5px solid yellow;
+    box-sizing: border-box;
+}
+​
+.box2 {
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    border: 5px solid red;
+    margin-left: 100px;
+    box-sizing: border-box;
+}
+​
+.box3 {
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    border: 5px solid blue;
+    margin-left: 200px;
+    box-sizing: border-box;
+}

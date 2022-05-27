@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+</head>
+<body>
+    <form action="https://kredo.jp/" method="post">
+    <!--postにすると、入力してもURLには表示されないから安全。getだと表示される-->    
+        
+
+    <!--Text input-->
+        <label for="fullname">FullName:</label>
+        <input type="fullname" name="fullname" id="fullname" placeholder="Last Name, First Name">
+      <!--idはなくてもどちらでもいい、あればフルネームを押すと自動的にカーソルが枠に動く-->
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="@gmail.com">
+
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" placeholder="your password"> 
+        
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="your age">
+        
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday">
+        <!--birthdayの時は、placeholderはいらない自動的に日付の選択ができる-->
+
+
+        <!--Radio Button　〇のボックス-->
+        <div>
+            <p>Your Gender</p>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other">Other</label>
+        </div>
+        <!--valueはデータを受け取る側に詳細を表示する為に必ず必要-->
+
+        <!--Checkbox　□のボックス-->
+        <div>
+            <p>Your Brand Car</p>
+            <input type="checkbox" name="car" value="toyota" id="toyota">
+            <label for="toyota">Toyota</label>
+
+            <input type="checkbox" name="car" value="suzuki" id="suzuki">
+            <label for="suzuki">Suzuki</label>
+
+            <input type="checkbox" name="car" value="ford" id="ford">
+            <label for="ford">Ford</label>
+        </div>
+
+        <!--Dropdown List box-->
+        <br><br>
+        <label for="phone">Your Smart phone</label>
+        <select name="phone" id="phone">
+            <option value="" hidden>Select Phone</option>
+            <!--隠したい時は、hiddenを開始タグに入力する-->
+            <option value="iphone">Iphone</option>
+            <option value="samsung">Samsung</option>
+            <option value="xiaomi">Xiaomi</option>
+        </select>
+
+        <!--Text Area-->
+        <br>
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="commment" cols="30" rows="10" placeholder="Your Comment here!"></textarea>
+
+
+        <!--Buttons-->
+        <br><br>
+        <input type="submit" value="send">
+        <!--sendでもOKでもどちらでもいい-->
+        <input type="image" src="assets/image/submit.png" height="50px">
+        <button type="submit" name="send">Send</button>
+
+
+    </form>
+</body>
+</html>
